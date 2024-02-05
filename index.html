@@ -21,27 +21,29 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="general.css">
     <link rel="stylesheet" href="queries.css">
+    <script type="module" src="index.js" defer></script>
     <title>Appie</title>
   </head>
   <body>
-    
       <header class="header">
         <div class="header-container container">
           <img class="logo" src="./Project Images/logo.png" alt="" />
           
-          <input type="checkbox" id="barsicon" class="barsicon">
-          <label for="barsicon" class="burger-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
+        
+  
+          <button class="burger-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+              class="w-6 h-6">
+              <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+            </svg>
+          </button>
 
           <nav class="main-nav">
             <ul class="list-links">
-              <li><a class="nav-link" href="#">Home</a> <i class="fa-solid fa-angle-down"></i></li>
+              <li><a class="nav-link" href="#">Home</a></li>
               <li><a class="nav-link" href="#features">Service</a></li>
-              <li><a class="nav-link" href="#pages">Pages</a> <i class="fa-solid fa-angle-down"></i></li>
-              <li><a class="nav-link" href="#news">News</a> <i class="fa-solid fa-angle-down"></i></li>
+              <li><a class="nav-link" href="#pages">Pages</a></li>
+              <li><a class="nav-link" href="#news">News</a></li>
               <li><a class="nav-link" href="#contact">Contact</a></li>
               <li><a class="nav-link get-started" href="#pricing">Get started</a></li>
             </ul>
@@ -52,6 +54,9 @@
         </div> 
         </header>
 
+        <main>
+
+    
         <div class="h-bk">
       <section class="hero-section">
         <div class="hero container">
@@ -65,6 +70,7 @@
               type="email"
               placeholder="info@appie.com"
               required
+              
               />
              <button type="submit" class="submit-btn"><i class="fa-sharp fa-solid fa-arrow-right arrow-icon"></i></button>
             
@@ -99,7 +105,7 @@
             <h3 class="main-title">How does it work</h3>
             <p class="sub-title">The full monty spiffing good time no biggie cack grub fantastic.</p>
           </div>
-          <a class="pink-btn" href="">View all Features <i class="fa-solid fa-arrow-right"></i></a>
+          <button class="how-it-works-view-all-btn">View all Features <i class="fa-solid fa-arrow-right"></i></button>
         </div>
         
         <div class="section-how-cards grid grid-3-cols">
@@ -109,7 +115,7 @@
             <h4 class="card-title">Fast and intuitive</h4>
             <p class="card-discription">Oxford posh bevvy give us a bell gutted mate spend
               a penny quaint cockup plastered.</p>
-              <a class="read-more-btn" href="">Read More &RightArrow;</a>
+              <a class="read-more-btn" href="#">Read More &RightArrow;</a>
             </div>
 
             <div class="section-how-card two">
@@ -117,7 +123,7 @@
               <h4 class="card-title">Fast and intuitive</h4>
               <p class="card-discription">Oxford posh bevvy give us a bell gutted mate spend
                 a penny quaint cockup plastered.</p>
-                <a class="read-more-btn" href="">Read More &RightArrow;</a>
+                <a class="read-more-btn" href="#">Read More &RightArrow;</a>
               </div>
 
               <div class="section-how-card three">
@@ -125,7 +131,7 @@
                 <h4 class="card-title">Fast and intuitive</h4>
                 <p class="card-discription">Oxford posh bevvy give us a bell gutted mate spend
                   a penny quaint cockup plastered.</p>
-                  <a class="read-more-btn" href="">Read More &RightArrow;</a>
+                  <a class="read-more-btn" href="#">Read More &RightArrow;</a>
                 </div>
 
                 <div class="section-how-card four">
@@ -133,7 +139,7 @@
                   <h4 class="card-title">Fast and intuitive</h4>
                   <p class="card-discription">Oxford posh bevvy give us a bell gutted mate spend
                     a penny quaint cockup plastered.</p>
-                    <a class="read-more-btn" href="">Read More &RightArrow;</a>
+                    <a class="read-more-btn" href="#">Read More &RightArrow;</a>
                   </div>
 
                     <div class="section-how-card five">
@@ -141,7 +147,7 @@
                       <h4 class="card-title">Fast and intuitive</h4>
                       <p class="card-discription">Oxford posh bevvy give us a bell gutted mate spend
                         a penny quaint cockup plastered.</p>
-                        <a class="read-more-btn" href="">Read More &RightArrow;</a>
+                        <a class="read-more-btn" href="#">Read More &RightArrow;</a>
                       </div>
 
                       <div class="section-how-card six">
@@ -149,7 +155,7 @@
                         <h4 class="card-title">Fast and intuitive</h4>
                         <p class="card-discription">Oxford posh bevvy give us a bell gutted mate spend
                           a penny quaint cockup plastered.</p>
-                          <a class="read-more-btn" href="">Read More &RightArrow;</a>
+                          <a class="read-more-btn" href="#">Read More &RightArrow;</a>
                         </div>
                     </div>
                  </div>
@@ -244,33 +250,33 @@
                 
 
                   <div class="statistics-cards">
-                    <div class="card c1">
+                    <div class="card c1" data-delay="0s">
                       <img src="./Project Images/icons/counter-icon-1.svg" alt="">
-                      <h3>100<span>k+</span> </h3>
+                      <h3><span class="stc-num">100</span><span>k+</span> </h3>
                     <p>Active Installation</p>
                   </div>
          
 
                 
-                    <div class="card c2">
+                    <div class="card c2"data-delay=".2s">
                      <img src="./Project Images/icons/counter-icon-2.svg" alt="">
-                    <h3>376<span>+</span> </h3>
+                    <h3><span class="stc-num">376</span><span>+</span> </h3>
                     <p>Active Installation</p>
                   </div>
 
 
                 
-                  <div class="card c3">
+                  <div class="card c3"data-delay="0s">
                    <img src="./Project Images/icons/counter-icon-3.svg" alt="">
-                   <h3>253<span>+</span> </h3>
+                   <h3><span class="stc-num">252</span><span>+</span> </h3>
                   <p>Active Installation</p>
                 </div>
 
 
               
-                <div class="card c4">
+                <div class="card c4" data-delay=".2s">
                   <img src="./Project Images/icons/counter-icon-4.svg" alt="">
-                <h3>865<span>k+</span></h3>
+                <h3><span class="stc-num">865</span><span>k+</span></h3>
                 <p>Active Installation</p>
               </div>
             </div>
@@ -290,7 +296,7 @@
                       <h3>Watch the two-minute video to learn how.</h3>
                       <p>The wireless cheesed on your bike mate zonked a load of old tosh hunky dory 
                         it's all gone to pot haggle william car boot pear shaped geeza.</p>
-                        <a class="pink-btn" href="">Get started</a>
+                        <button class="pink-btn">Get started</button>
                     </div>
                   </div>
 
@@ -316,11 +322,11 @@
                       sponge happy days cras arse over blatant.</p>
 
                       <div class="app-bnts">
-                        <a href="" class="app-link app-store">
+                        <a href="#" class="app-link app-store">
                           <i class="fa-brands fa-apple"></i>
                           <p class="download-for">Download For <br><span class="ios">ios</span></p>
                         </a>
-                        <a href="" class="app-link play-store">
+                        <a href="#" class="app-link play-store">
                           <i class="fa-brands fa-google-play"></i>
                           <p class="download-for">Download For <br><span class="android">Android</span></p>
                         </a>
@@ -333,9 +339,9 @@
                 <div class="title-container">
                   <h3 class="main-title">Simple pricing for Everyone</h3>
                   <p class="sub-title">The full monty spiffing good time no biggie cack grub fantastic.</p>
-                  <div class="plans-btn">
-                    <a href="" class="monthly">Monthly</a>
-                    <a href="" class="yearly">Yearly</a>
+                  <div class="plans-btns-wrapper">
+                    <button class="price-btn monthly">Monthly</button>
+                    <button class="price-btn yearly">Yearly</button>
                   </div>
                 </div>
               
@@ -344,7 +350,7 @@
                     <h6 class="type">Fresh</h6>
                     <div class="plan-price">
                       <sup>$</sup>
-                      <span>04</span>
+                      <span class="fresh-price">4</span>
                       <p>/month</p>
                     </div>
                     <p class="plan-discription">Get your 14 day free trial</p>
@@ -362,7 +368,7 @@
                     <h6 class="type">Sweet</h6>
                     <div class="plan-price">
                       <sup>$</sup>
-                      <span>16</span>
+                      <span class="sweet-price">16</span>
                       <p>/month</p>
                     </div>
                     <p class="plan-discription">Billed $276 per website annually.</p>
@@ -380,7 +386,7 @@
                     <h6 class="type">Juicy</h6>
                     <div class="plan-price">
                       <sup>$</sup>
-                      <span>27</span>
+                      <span class="juicy-price">27</span>
                       <p>/month</p>
                     </div>
                     <p class="plan-discription">Billed $276 per website annually.</p>
@@ -491,6 +497,7 @@
                   </div>
                 </div>
                 </section>
+              </main>
 
                 <!-- footer section -->
                 
@@ -555,7 +562,7 @@
                   </div>
 
                 </footer>
-                <script src="/javaScript/scirpt.js"></script>
+              
               </body>
               </html>
               

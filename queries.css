@@ -110,7 +110,7 @@ for tablets
     transform: translateX(100%);
   }
 
-  .barsicon:checked ~ nav {
+  .navIsOpen.main-nav {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
