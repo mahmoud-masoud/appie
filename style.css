@@ -122,6 +122,8 @@ nav .list-links {
   position: absolute;
   right: 0;
   bottom: 0;
+  opacity: 0;
+  scale: 0.7;
 }
 .hero-img-box img {
   max-height: 100%;
@@ -132,14 +134,20 @@ nav .list-links {
 .hero-content h1 {
   font-size: 6.2rem;
   font-weight: 400;
+  opacity: 0;
 }
 
 .header-text {
   line-height: 1.5;
+  opacity: 0;
 }
 
 .hero-content .bold-word {
   font-weight: 900;
+}
+
+.hero form {
+  opacity: 0;
 }
 
 .input-box {
@@ -202,6 +210,7 @@ nav .list-links {
   display: flex;
   align-items: center;
   gap: 2.2rem;
+  opacity: 0;
 }
 
 .feedback-nums {
@@ -254,6 +263,8 @@ nav .list-links {
   border: 1px solid #dee2e6;
   border-radius: 1rem;
   padding: 4.8rem;
+  transition: all 1 ease-in;
+  opacity: 0;
 }
 
 .section-how-card i {
@@ -372,6 +383,7 @@ nav .list-links {
 .about-section .about-img-box {
   position: absolute;
   top: -70px;
+  opacity: 0;
 }
 
 .about-section .about-img-box img {
@@ -390,6 +402,10 @@ nav .list-links {
   margin-bottom: 1.2rem;
 }
 
+.about-text {
+  opacity: 0;
+}
+
 .about-description {
   line-height: 1.6;
   font-size: 1.6rem;
@@ -397,7 +413,7 @@ nav .list-links {
   margin-bottom: 3.2rem;
 }
 
-.about-content .aobut-row {
+.about-content .about-row {
   display: flex;
   gap: 40px;
 }
@@ -406,6 +422,7 @@ nav .list-links {
   display: flex;
   align-items: flex-start;
   gap: 1.6rem;
+  transform: translateY(5rem);
 }
 
 .row-box div {
@@ -453,6 +470,9 @@ nav .list-links {
   justify-items: center;
 }
 
+.f-img-box {
+  opacity: 0;
+}
 .f-img-box img {
   max-width: 100%;
 }
@@ -466,17 +486,9 @@ nav .list-links {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 9px;
   padding: 3.2rem 6.4rem;
-  transition: all 0.5 s ease-in-out;
-  transform: translateY(100%);
+  transition: all 0.5 ease-in-out;
+  transform: translateY(15rem);
 }
-
-/* .f2 {
-  transition-delay: 0.5s;
-}
-
-.f3 {
-  transition-delay: 1s;
-} */
 
 .f1:hover {
   border: 1px solid #ea4c89;
@@ -548,8 +560,8 @@ nav .list-links {
   padding: 3rem 4.8rem;
   border-radius: 9px;
   background-color: white;
-  transition: 0.3s ease-in-out;
   transform: translateY(50%);
+  opacity: 0;
 }
 
 .statistics-cards .c1 {
@@ -577,6 +589,17 @@ nav .list-links {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.5;
+}
+
+.card-animation {
+  animation: fadeIn 1s ease-out 1 forwards;
+}
+
+@keyframes fadeIn {
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }
 
 .video {
@@ -815,8 +838,11 @@ nav .list-links {
 }
 
 .sweet {
-  box-shadow: 0 40px 40px 0 rgb(14, 17, 51, 0.1);
   position: relative;
+}
+
+.sweet-plan-animations {
+  box-shadow: 0 40px 40px 0 rgb(14, 17, 51, 0.1);
   border-top: 3px solid var(--primary-color);
 }
 
@@ -995,19 +1021,19 @@ nav .list-links {
   text-decoration: none;
 }
 
-/* sponsers section */
+/* sponsors section */
 
-.sponsers-section {
+.sponsors-section {
   padding: 9.6rem 0;
 }
 
-.sponsers-section .title-container {
+.sponsors-section .title-container {
   align-items: center;
   justify-content: center;
   margin-bottom: 4.8rem;
 }
 
-.sponsers {
+.sponsors {
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
@@ -1015,7 +1041,7 @@ nav .list-links {
   justify-content: center;
 }
 
-.sponsers-row-1 {
+.sponsors-row-1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -1023,7 +1049,7 @@ nav .list-links {
   gap: 2.4rem;
 }
 
-.sponser-row-2 {
+.sponsor-row-2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -1031,7 +1057,7 @@ nav .list-links {
   gap: 2.4rem;
 }
 
-.sponsers .sponser-box {
+.sponsors .sponsor-box {
   height: 10rem;
   width: 10rem;
   display: flex;
@@ -1039,6 +1065,21 @@ nav .list-links {
   justify-content: center;
   box-shadow: 0 20px 40px 0 rgb(14 17 51 / 10%);
   border-radius: 9px;
+  scale: 0.3;
+  opacity: 0.3;
+  animation: name duration timing-function delay iteration-count direction
+    fill-mode;
+}
+
+.sponsor-box-animations {
+  animation: sponsor-box 0.5s ease-in-out both;
+}
+
+@keyframes sponsor-box {
+  100% {
+    scale: 1;
+    opacity: 1;
+  }
 }
 
 .footer-section {
@@ -1198,14 +1239,4 @@ nav .list-links {
 
 .stc-num {
   font-weight: 600 !important;
-}
-
-.animation {
-  animation: upAndDown 1s ease-out 1 forwards;
-}
-
-@keyframes upAndDown {
-  100% {
-    transform: translateY(0%);
-  }
 }
